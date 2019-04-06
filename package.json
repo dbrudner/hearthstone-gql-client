@@ -23,6 +23,7 @@
 	"homepage": "https://github.com/dbrudner/hearthstone-graphql-client#readme",
 	"dependencies": {
 		"@zeit/next-typescript": "^1.1.1",
+		"antd": "^3.16.1",
 		"apollo-client-preset": "^1.0.8",
 		"graphql": "^14.2.1",
 		"graphql-tag": "^2.10.1",
