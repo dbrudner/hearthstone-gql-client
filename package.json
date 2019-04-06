@@ -1,0 +1,46 @@
+{
+	"name": "hearthstone-graphql-client",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"now-build": "next build",
+		"start": "next start",
+		"now": "now",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dbrudner/hearthstone-graphql-client.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dbrudner/hearthstone-graphql-client/issues"
+	},
+	"homepage": "https://github.com/dbrudner/hearthstone-graphql-client#readme",
+	"dependencies": {
+		"@zeit/next-typescript": "^1.1.1",
+		"apollo-client-preset": "^1.0.8",
+		"graphql": "^14.2.1",
+		"graphql-tag": "^2.10.1",
+		"next": "^8.0.4",
+		"next-apollo": "^2.0.9",
+		"react": "^16.8.6",
+		"react-apollo": "^2.5.4",
+		"react-dom": "^16.8.6"
+	},
+	"devDependencies": {
+		"@types/jest": "^24.0.11",
+		"@types/next": "^8.0.3",
+		"@types/react": "^16.8.12",
+		"@types/react-dom": "^16.8.3",
+		"@zeit/next-css": "^1.0.1",
+		"babel-jest": "^24.7.1",
+		"jest": "^24.7.1",
+		"react-testing-library": "^6.1.2",
+		"typescript": "^3.4.1"
+	}
+}
