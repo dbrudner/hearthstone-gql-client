@@ -1,5 +1,5 @@
 {
 	"version": 2,
-	"name": "hs-gql-client",
+	"name": "hearthstone-gql-client",
 	"builds": [{ "src": "next.config.js", "use": "@now/next" }]
 }

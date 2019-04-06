@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/dbrudner/hs-gql-client.svg?branch=master)](https://travis-ci.com/dbrudner/hs-gql-client)
+[![Build Status](https://travis-ci.com/dbrudner/hearthstone-gql-client.svg?branch=master)](https://travis-ci.com/dbrudner/hearthstone-gql-client)
 
 # HS_GQL_CLIENT
 
