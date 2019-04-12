@@ -17,15 +17,17 @@ export const BasicFilter = () => (
 			return (
 				<Select style={{ width: 130 }} defaultValue="Options...">
 					<Select.Option value="Options...">Options...</Select.Option>
-					<Select.OptGroup label="Type">
-						{data.meta.types.map(type => (
-							<Select.Option value={type}>{type}</Select.Option>
-						))}
-					</Select.OptGroup>
 					<Select.OptGroup label="Class">
 						{data.meta.cardClasses.map(cardClass => (
-							<Select.Option value={cardClass}>
+							<Select.Option key={cardClass} value={cardClass}>
 								{cardClass}
+							</Select.Option>
+						))}
+					</Select.OptGroup>
+					<Select.OptGroup label="Type">
+						{data.meta.types.map(type => (
+							<Select.Option key={type} value={type}>
+								{type}
 							</Select.Option>
 						))}
 					</Select.OptGroup>
