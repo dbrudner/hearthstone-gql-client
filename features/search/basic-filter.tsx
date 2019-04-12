@@ -1,6 +1,11 @@
 import { Select } from "antd";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
+import { any } from "prop-types";
+
+type BasicFilterProps = {
+	setBasicOptionValue: (value: string) => void;
+};
 
 const query = gql`
 	query {
@@ -11,12 +16,18 @@ const query = gql`
 	}
 `;
 
-export const BasicFilter = () => (
+export const BasicFilter: React.SFC<BasicFilterProps> = ({
+	setBasicOptionValue,
+}) => (
 	<Query query={query}>
 		{({ data }) => {
 			return (
-				<Select style={{ width: 130 }} defaultValue="Options...">
-					<Select.Option value="Options...">Options...</Select.Option>
+				<Select
+					onChange={value => setBasicOptionValue(value)}
+					style={{ width: 130 }}
+					defaultValue=""
+				>
+					<Select.Option value="">Options...</Select.Option>
 					<Select.OptGroup label="Class">
 						{data.meta.cardClasses.map(cardClass => (
 							<Select.Option key={cardClass} value={cardClass}>
